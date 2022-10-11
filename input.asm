@@ -3,7 +3,7 @@
 section .data
 global main
     MSG: db 'Selecione uma letra/número', 10
-    LEN: equ $-msg
+    LEN: equ $-MSG
 
 section .bss
     %define BUFFER_INPUT 1
