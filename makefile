@@ -1,5 +1,4 @@
 entry = main
-write:
-	@nasm -f elf64 -o $@.o $@.asm
-	@ld -e $(entry) -o $@ $@.o
-	@./$@
+build:
+	@nasm -f elf64 -o write.o write.asm
+	@ld -e $(entry) -o write write.o
