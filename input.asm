@@ -39,3 +39,4 @@ main:
 
     mov eax, SYS_EXIT
     mov ebx, EXIT_OK
+    int 0x80
