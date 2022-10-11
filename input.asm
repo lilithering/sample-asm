@@ -37,6 +37,12 @@ main:
     mov edx, BUFFER_INPUT
     int 0x80
 
+    mov eax, SYS_WRITE
+    mov ebx, STDOUT
+    mov ecx, 10
+    mov edx, 1
+    int 0x80
+
     mov eax, SYS_EXIT
     mov ebx, EXIT_OK
     int 0x80
