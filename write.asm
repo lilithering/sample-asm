@@ -1,6 +1,6 @@
 section .data
 global main
-msg: 'Sample String with new line ->', 10
+msg: db 'Sample String with new line ->', 10
 len: equ $-msg
 
 section .text
@@ -13,4 +13,4 @@ main:
 
     mov eax, 1 ; syscall: 1 - sys_exit
     mov ebx, 0 ; a1: 0 (exit code: ok)
-    int 0x80
+    int 0x80 ; syscall
