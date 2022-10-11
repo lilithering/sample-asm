@@ -1,3 +1,5 @@
+%include 'defines.inc'
+
 section .data
 global main
 msg: db 'Sample String with new line ->', 10
