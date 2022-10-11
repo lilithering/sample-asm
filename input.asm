@@ -2,7 +2,8 @@
 
 section .data
 global main
-    MSG: db 'Selecione uma letra/número', 10
+    LF: db 10
+    MSG: db 'Selecione uma letra/número', LF
     LEN: equ $-MSG
     MSG2: db 'Selecionado: '
     LEN2: equ $-MSG2
@@ -39,7 +40,7 @@ main:
 
     mov eax, SYS_WRITE
     mov ebx, STDOUT
-    mov ecx, 10
+    mov ecx, LF
     mov edx, 1
     int 0x80
 
