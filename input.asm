@@ -3,7 +3,7 @@
 section .data
 global main
     LF: db 10
-    MSG: db 'Selecione uma letra/número', 10
+    MSG: db 'Selecione uma letra/número: '
     LEN: equ $-MSG
     MSG2: db 'Selecionado: '
     LEN2: equ $-MSG2
